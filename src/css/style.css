@@ -1,1 +1,16 @@
+/* vendors */
 @import "/src/css/normalize.css";
+
+/* utils*/
+@import "/src/css/utils/variables.css";
+
+/* base */
+@import "/src/css/base/base.css";
+
+/* layout */
+@import "/src/css/layout/header.css";
+@import "/src/css/layout/footer.css";
+
+/* components */
+@import "/src/css/components/button.css";
+@import "/src/css/components/card.css";
