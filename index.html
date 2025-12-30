@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiance - Accueil</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header avec structure BEM -->
+    <header class="header">
+        <div class="header__container">
+            <a href="/index.html" class="header__logo">
+                <img src="/assets/svg/logo_radiance.svg" alt="Logo Radiance" class="header__logo-img">
+            </a>
+            <button class="header__menu-btn" aria-label="Ouvrir le menu">
+                <span class="header__menu-icon"></span>
+            </button>
+            <select class="header__lang" aria-label="Changer de langue">
+                <option value="fr">FR</option>
+                <option value="en">EN</option>
+            </select>
+        </div>
+    </header>
+
+    <!-- Menu Mobile avec structure BEM -->
+    <nav class="menu" id="menu">
+        <div class="menu__header">
+            <img src="/assets/svg/logo_radiance.svg" alt="Logo Radiance" class="menu__logo">
+            <div class="menu__top">
+                <select class="menu__lang" aria-label="Changer de langue">
+                    <option value="fr">FR</option>
+                    <option value="en">EN</option>
+                </select>
+                <button class="menu__close" aria-label="Fermer le menu">X</button>
+            </div>
+        </div>
+        <ul class="menu__list">
+            <li class="menu__item"><a href="/fr/article1.html" class="menu__link">Qui est Lise Meitner ?</a></li>
+            <li class="menu__item"><a href="/fr/article2.html" class="menu__link">Les Ambitieuses</a></li>
+            <li class="menu__item"><a href="/fr/article3.html" class="menu__link">Vulgarisation de la théorie</a></li>
+            <li class="menu__item"><a href="/fr/article4.html" class="menu__link">La Course à la Bombe</a></li>
+            <li class="menu__item"><a href="/fr/article5.html" class="menu__link">Les Femmes dans la Littérature</a>
+            </li>
+            <li class="menu__item"><a href="/fr/frise.html" class="menu__link">Frise Chronologique</a></li>
+            <li class="menu__item"><a href="/fr/contact.html" class="menu__link">Contact</a></li>
+            <li class="menu__item"><a href="/fr/glossaire.html" class="menu__link">Glossaire</a></li>
+            <li class="menu__item"><a href="/fr/apropos.html" class="menu__link">À Propos</a></li>
+            <li class="menu__item"><a href="/fr/autresprojets.html" class="menu__link">Autres Projets</a></li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <!-- Hero Section avec structure BEM -->
+        <section class="hero">
+            <img src="/assets/img/hero_accueil.webp" alt="Lise Meitner" class="hero__img">
+            <div class="hero__content">
+                <h1 class="hero__title">Radiance</h1>
+                <p class="hero__text">En savoir plus</p>
+            </div>
+        </section>
+
+        <!-- About Section avec structure BEM -->
+        <section class="about">
+            <p class="about__text">
+                Radiance met en lumière celles que l'histoire a trop souvent laissées dans l'ombre.
+            </p>
+            <p class="about__text">
+                À travers l'histoire de Lise Meitner, pionnière de la physique nucléaire et victime de "l'Effet
+                Matilda", ce projet rend hommage aux femmes oubliées de la science.
+            </p>
+            <p class="about__text">
+                Mêlant histoire, vulgarisation et réflexion sur l'égalité, ce site vous invite à redécouvrir le rôle
+                essentiel des chercheuses dans la construction de notre compréhension du monde.
+            </p>
+            <p class="about__caption">
+                *Photo de Lise Meitner prise le 11 février 1939
+            </p>
+        </section>
+
+        <!-- Articles Section avec balises article et structure BEM -->
+        <section class="articles">
+            <h2 class="articles__title">Cliquez sur les Articles pour plus d'informations :</h2>
+
+            <article class="card">
+                <img src="/assets/img/article1-1.webp" alt="Lise Meitner" class="card__img">
+                <div class="card__content">
+                    <h3 class="card__title">Qui est Lise Meitner ?</h3>
+                    <p class="card__excerpt">"... Dans l'histoire des sciences, certaines figures ont brillé dans
+                        l'ombre. Lise Meitner est l'une d'elles. [...]"</p>
+                    <p class="card__description">L'histoire de Lise Meitner est celle d'une femme qui a ouvert la voie à
+                        une nouvelle ère scientifique tout en affrontant les préjugés et la persécution.</p>
+                    <a href="/fr/article1.html" class="card__link">EN SAVOIR PLUS →</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="/assets/img/card-a3.webp" alt="Les Ambitieuses" class="card__img">
+                <div class="card__content">
+                    <h3 class="card__title">Les Ambitieuses</h3>
+                    <p class="card__excerpt">"...de nombreuses femmes ont dû se battre pour exister dans des sociétés
+                        qui ne leur laissaient que peu de place... [...]"</p>
+                    <p class="card__description">Les Ambitieuses est bien plus qu'un recueil de biographies: c'est un
+                        manifeste pour la reconnaissance du courage féminin.</p>
+                    <a href="/fr/article2.html" class="card__link">EN SAVOIR PLUS →</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="/assets/img/article3-1.webp" alt="Vulgarisation de la théorie" class="card__img">
+                <div class="card__content">
+                    <h3 class="card__title">Vulgarisation de sa théorie</h3>
+                    <p class="card__excerpt">"En 1938, un événement scientifique bouleverse à jamais la compréhension de
+                        la matière: la fission nucléaire. [...]"</p>
+                    <p class="card__description">La théorie de Lise Meitner sur la fission nucléaire est l'un des
+                        tournants majeurs de la physique moderne.</p>
+                    <a href="/fr/article3.html" class="card__link">EN SAVOIR PLUS →</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="/assets/img/card-a4.webp" alt="La Course à la bombe" class="card__img">
+                <div class="card__content">
+                    <h3 class="card__title">Robert Arnaut<br>La course à la bombe<br><span class="card__subtitle">Et si
+                            Hitler avait eu l'arme atomique ?<br>La Course à la bombe</span></h3>
+                    <p class="card__excerpt">"... À la croisée de la science, de la politique et du drame humain, la
+                        série documentaire... [...]"</p>
+                    <p class="card__description">La Course à la bombe est bien plus qu'une série sur la création d'une
+                        arme: c'est une réflexion sur la condition humaine.</p>
+                    <a href="/fr/article4.html" class="card__link">EN SAVOIR PLUS →</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="/assets/img/article5-1.webp" alt="Les Femmes dans la Littérature" class="card__img">
+                <div class="card__content">
+                    <h3 class="card__title">Les Femmes dans la...</h3>
+                    <p class="card__excerpt">"... For a long time, literature has spoken about women without giving them
+                        a voice.... [...]"</p>
+                    <p class="card__description">From Christine de Pizan to Virginia Woolf, from George Sand to Toni
+                        Morrison, these women dared to write in a world that wanted them silent</p>
+                    <a href="/fr/article5.html" class="card__link">EN SAVOIR PLUS →</a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer avec structure BEM -->
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__brand">
+                <img src="/assets/svg/logo_radiance.svg" alt="Logo Radiance" class="footer__logo">
+                <h2 class="footer__title">Radiance</h2>
+            </div>
+            <nav class="footer__nav">
+                <a href="#" class="footer__link">MENU</a>
+                <a href="#" class="footer__link">ARTICLES</a>
+                <a href="/fr/contact.html" class="footer__link">CONTACT</a>
+                <a href="/fr/apropos.html" class="footer__link">A PROPOS</a>
+                <a href="/fr/autresprojets.html" class="footer__link">AUTRES PROJETS</a>
+            </nav>
+        </div>
+
+        <div class="footer__contact">
+            <h3 class="footer__heading">CONTACT</h3>
+            <address class="footer__address">
+                <p>4 PL THARRADIN</p>
+                <p>25200 MONTBÉLIARD</p>
+                <p>03 81 99 47 34</p>
+                <p>SITE DE L'IUT MARIE ET LOUIS PASTEUR</p>
+            </address>
+        </div>
+
+        <div class="footer__social">
+            <h3 class="footer__heading">NOS RÉSEAUX SOCIAUX</h3>
+            <div class="footer__social-links">
+                <a href="#" aria-label="Facebook"><img src="/assets/svg/facebook_blanc.svg" alt="Facebook"></a>
+                <a href="#" aria-label="Instagram"><img src="/assets/svg/instagram_blanc.svg" alt="Instagram"></a>
+                <a href="#" aria-label="TikTok"><img src="/assets/svg/tiktok_blanc.svg" alt="TikTok"></a>
+            </div>
+        </div>
+
+        <p class="footer__credits">Projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département MMi de
+            Montbéliard</p>
+    </footer>
+
+    <script src="/src/js/menu.js"></script>
+</body>
+
+</html>
