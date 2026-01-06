@@ -1,0 +1,83 @@
+.articles {
+    padding: 1.5rem 1.25rem;
+}
+
+.articles__title {
+    font-family: "Space Mono", monospace;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    color: var(--noir);
+}
+
+
+.card {
+    background-color: var(--jaune);
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 3rem;
+    margin: 1rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card__img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.card__content {
+    padding: 1.25rem;
+    background-color: var(--blanc-ivoire);
+}
+
+.card__title {
+    font-family: "Space Mono", monospace;
+    font-size: 1.05rem;
+    margin-bottom: 0.75rem;
+    color: var(--noir);
+}
+
+.card__subtitle {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 400;
+    margin-top: 0.25rem;
+    opacity: 0.8;
+}
+
+.card__excerpt {
+    font-size: 0.85rem;
+    font-style: italic;
+    margin-bottom: 0.75rem;
+    color: var(--noir);
+    opacity: 0.75;
+}
+
+.card__description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    color: var(--noir);
+}
+
+.card__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: "Space Mono", monospace;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--noir);
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 999px;
+    background-color: var(--jaune);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.card__link:hover {
+    background-color: var(--violet);
+    color: var(--blanc-casse);
+    transform: translateX(2px);
+}

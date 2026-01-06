@@ -14,89 +14,100 @@
 </head>
 
 <body>
-    <!-- Header -->
     <header class="header">
         <div class="header__container">
-            <a href="/index.html" class="header__logo">
-                <img src="/assets/svg/logo_radiance.svg" alt="Logo Radiance" class="header__logo-img">
-            </a>
-            <button class="header__menu-btn" aria-label="Ouvrir le menu">
-                <span class="header__menu-icon"></span>
-            </button>
-            <select class="header__lang" aria-label="Changer de langue">
-                <option value="fr">FR</option>
-                <option value="en">EN</option>
-            </select>
-        </div>
-    </header>
+            <div class="header__brand">
+                <a href="../index.html">
+                    <img src="/assets/svg/logo_radiance.svg" alt="Radiance" class="header__logo">
+                </a>
+                <span class="header__title">Radiance</span>
+            </div>
 
-    <!-- Menu Mobile -->
-    <nav class="menu" id="menu">
-        <div class="menu__header">
-            <img src="/assets/svg/logo_radiance.svg" alt="Logo Radiance" class="menu__logo">
-            <div class="menu__top">
-                <select class="menu__lang" aria-label="Changer de langue">
+            <div class="header__actions">
+                <select class="header__lang" aria-label="Changer de langue">
                     <option value="fr">FR</option>
                     <option value="en">EN</option>
                 </select>
-                <button class="menu__close" aria-label="Fermer le menu">X</button>
+
+                <button class="header__menu-btn" aria-label="Ouvrir le menu">
+                    <span class="header__menu-icon"></span>
+                </button>
             </div>
         </div>
+    </header>
+
+    <nav class="menu">
+        <div class="menu__header">
+            <span class="menu__title">Menu</span>
+            <button class="menu__close" aria-label="Fermer le menu">✕</button>
+        </div>
+
         <ul class="menu__list">
-            <li class="menu__item"><a href="/fr/article1.html" class="menu__link">Qui est Lise Meitner ?</a></li>
-            <li class="menu__item"><a href="/fr/article2.html" class="menu__link">Les Ambitieuses</a></li>
-            <li class="menu__item"><a href="/fr/article3.html" class="menu__link">Vulgarisation de la théorie</a></li>
-            <li class="menu__item"><a href="/fr/article4.html" class="menu__link">La Course à la Bombe</a></li>
-            <li class="menu__item"><a href="/fr/article5.html" class="menu__link">Les Femmes dans la Littérature</a>
-            </li>
-            <li class="menu__item"><a href="/fr/frise.html" class="menu__link">Frise Chronologique</a></li>
-            <li class="menu__item"><a href="/fr/contact.html" class="menu__link">Contact</a></li>
-            <li class="menu__item"><a href="/fr/glossaire.html" class="menu__link">Glossaire</a></li>
-            <li class="menu__item"><a href="/fr/apropos.html" class="menu__link">À Propos</a></li>
-            <li class="menu__item"><a href="/fr/autresprojets.html" class="menu__link">Autres Projets</a></li>
+            <li class="menu__item"><a class="menu__link" href="/fr/article1.html">Qui est lise meitner</a></li>
+            <li class="menu__item"><a class="menu__link" href="/fr/article2.html">Les Ambitieuses</a></li>
+            <li class="menu__item"><a class="menu__link" href="/fr/article3.html">Vulgarisation de la théorie de lise
+                    meinter</a></li>
+            <li class="menu__item"><a class="menu__link" href="/fr/article4.html">La course à la bombe </a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Les femmes dans la littérature</a></li>
+            <li class="menu__item"><a class="menu__link" href="/fr/frise.html">Frise chronologique </a></li>
+            <li class="menu__item"><a class="menu__link" href="/fr/contact.html">Contact</a></li>
+            <li class="menu__item"><a class="menu__link" href="/fr/apropos.html">A propos</a></li>
+            <li class="menu__item"><a class="menu__link" href="/fr/autresprojets.html">Autres projets</a></li>
         </ul>
     </nav>
+    <section class="hero">
+        <img src="/assets/img/hero_article3.webp" alt="" class="hero__image">
 
-    <!-- Main Content -->
+        <div class="hero__content">
+            <h1 class="hero__title"><strong>Vulgarisation</strong> <strong>de</strong> <strong>la</strong>
+                <strong>théorie</strong> <strong>de</strong> <strong>Lise</strong> <strong>Meitner</strong>
+            </h1>
+        </div>
+    </section>
+
     <main class="main">
-        <!-- Hero Section -->
-        <section class="hero hero--article">
-            <img src="/assets/img/hero_article3.webp" alt="Vulgarisation de la théorie" class="hero__img">
-            <div class="hero__overlay">
-                <h1 class="hero__title">Vulgarisation de<br>la théorie de<br>Lise Meitner</h1>
-            </div>
-        </section>
 
-        <!-- Breadcrumb -->
         <nav class="breadcrumb">
-            <a href="/index.html" class="breadcrumb__link">Accueil</a>
-            <span class="breadcrumb__separator">></span>
-            <span class="breadcrumb__current">Vulgarisation de la théorie...</span>
+            <a href="/" class="breadcrumb__link">Accueil</a>
+            <span class="breadcrumb__separator">›</span>
+            <span class="breadcrumb__current">Vulgarisation de la théorie de Lise Meitner</span>
         </nav>
 
         <!-- Article Content -->
         <article class="article">
             <p class="article__author">Article écrit par Alex Ringenbach</p>
 
+            <h2 class="article__heading">Introduction</h2>
+
             <section class="article__section">
                 <p class="article__text">
-                    En décembre 1938, un événement scientifique bouleverse à jamais la compréhension de la matière: la
-                    fission nucléaire.
+                    En <strong>décembre 1938</strong>, un événement scientifique bouleverse à jamais la compréhension de
+                    la matière: la
+                    <strong><a href="/fr/glossaire.html#fission-nucleaire" class="article__glossary-link">fission
+                            nucléaire</a></strong>.
                 </p>
                 <p class="article__text">
-                    Derrière cette découverte majeure se cache Lise Meitner, physicienne autrichienne réfugiée en Suède,
-                    qui parvient à expliquer comment un noyau d'atome peut littéralement se scinder en deux.
+                    Derrière cette <strong>découverte majeure</strong> se cache <strong>Lise Meitner</strong>,
+                    <strong>physicienne autrichienne</strong>
+                    réfugiée en Suède,
+                    qui parvient à expliquer comment un <strong>noyau d'<a href="/fr/glossaire.html#atome"
+                            class="article__glossary-link">atome</a></strong> peut littéralement <strong>se scinder en
+                        deux</strong>.
                 </p>
                 <p class="article__text">
-                    Son interprétation, issue des expériences de son collègue Otto Hahn, marque le point de départ de
-                    l'ère nucléaire.
+                    Son <strong>interprétation</strong>, issue des expériences de son collègue <strong>Otto
+                        Hahn</strong>, marque le <strong>point de départ de
+                        l'ère nucléaire</strong>.
                 </p>
                 <p class="article__text">
-                    Cette théorie ne se limite pas à une avancée scientifique: elle ouvre la voie à des applications
-                    colossales de la production d'énergie aux armes atomiques.
+                    Cette théorie ne se limite pas à une <strong>avancée scientifique</strong>: elle ouvre la voie à des
+                    <strong>applications
+                        colossales</strong> de la <strong>production d'énergie</strong> aux <strong>armes
+                        atomiques</strong>.
                 </p>
                 <p class="article__text">
-                    Mais comment Meitner a-t-elle compris ce phénomène invisible et révolutionnaire ?
+                    Mais comment <strong>Meitner</strong> a-t-elle compris ce <strong>phénomène invisible et
+                        révolutionnaire</strong> ?
                 </p>
                 <figure class="article__figure">
                     <img src="/assets/img/article3-1.webp" alt="Otto Hahn" class="article__img">
@@ -105,27 +116,35 @@
             </section>
 
             <section class="article__section">
-                <h2 class="article__heading">Une scientifique face à un mystère atomique :</h2>
+                <h2 class="article__heading">Une scientifique face à un mystère atomique</h2>
                 <p class="article__text">
-                    À la fin des années 1930, la physique nucléaire est en pleine effervescence.
+                    À la <strong>fin des années 1930</strong>, la <strong>physique nucléaire</strong> est en
+                    <strong>pleine effervescence</strong>.
                 </p>
                 <p class="article__text">
-                    Depuis la découverte du neutron par James Chadwick, les chercheurs s'interrogent: que se passe-t-il
-                    lorsqu'on bombarde un noyau d'uranium avec des neutrons ?
+                    Depuis la <strong>découverte du <a href="/fr/glossaire.html#neutron"
+                            class="article__glossary-link">neutron</a></strong> par <strong>James Chadwick</strong>, les
+                    chercheurs s'interrogent: que se passe-t-il
+                    lorsqu'on <strong>bombarde un noyau d'uranium</strong> avec des <strong><a
+                            href="/fr/glossaire.html#neutron" class="article__glossary-link">neutrons</a></strong> ?
                 </p>
                 <p class="article__text">
-                    Lise Meitner et le chimiste Otto Hahn cherchent à créer des éléments plus lourds que l'uranium - les
-                    éléments transuraniens.
+                    <strong>Lise Meitner</strong> et le chimiste <strong>Otto Hahn</strong> cherchent à <strong>créer
+                        des éléments plus lourds</strong> que l'uranium - les
+                    <strong>éléments transuraniens</strong>.
                 </p>
                 <p class="article__text">
-                    Mais les résultats obtenus par Hahn et son collègue Fritz Strassmann défient toute logique : au lieu
-                    d'obtenir des atomes plus massifs, ils trouvent des traces d'éléments plus légers, comme le baryum.
+                    Mais les <strong>résultats</strong> obtenus par <strong>Hahn</strong> et son collègue <strong>Fritz
+                        Strassmann</strong> <strong>défient toute logique</strong> : au lieu
+                    d'obtenir des <strong>atomes plus massifs</strong>, ils trouvent des traces d'<strong>éléments plus
+                        légers</strong>, comme le <strong>baryum</strong>.
                 </p>
                 <p class="article__text">
-                    Comment un noyau aussi lourd pouvait-il se transformer en éléments deux fois plus petits ?
+                    Comment un <strong>noyau aussi lourd</strong> pouvait-il se <strong>transformer en éléments deux
+                        fois plus petits</strong> ?
                 </p>
                 <p class="article__text">
-                    C'est à Lise Meitner qu'il revient de résoudre cette énigme.
+                    C'est à <strong>Lise Meitner</strong> qu'il revient de <strong>résoudre cette énigme</strong>.
                 </p>
                 <figure class="article__figure">
                     <img src="/assets/img/article3-2.webp" alt="James Chadwick" class="article__img">
@@ -134,26 +153,35 @@
             </section>
 
             <section class="article__section">
-                <h2 class="article__heading">La naissance d'une idée révolutionnaire :</h2>
+                <h2 class="article__heading">La naissance d'une idée révolutionnaire</h2>
                 <p class="article__text">
-                    Exilée en Suède après l'Anschluss, Lise Meitner reçoit les résultats de Hahn par courrier.
+                    <strong>Exilée</strong> en Suède après l'<strong><a href="/fr/glossaire.html#anschluss"
+                            class="article__glossary-link">Anschluss</a></strong>, <strong>Lise Meitner</strong> reçoit
+                    les <strong>résultats de Hahn</strong> par courrier.
                 </p>
                 <p class="article__text">
-                    En les analysant, elle comprend que les lois chimiques ne suffisent plus: il faut chercher
-                    l'explication dans la physique du noyau.
+                    En les <strong>analysant</strong>, elle comprend que les <strong>lois chimiques</strong> ne
+                    suffisent plus: il faut chercher
+                    l'explication dans la <strong>physique du noyau</strong>.
                 </p>
                 <p class="article__text">
-                    Lors d'une promenade dans la neige avec son neveu Otto Frisch, elle trouve la clé :
+                    Lors d'une <strong>promenade dans la neige</strong> avec son neveu <strong>Otto Frisch</strong>,
+                    elle <strong>trouve la clé</strong> :
                 </p>
                 <p class="article__text">
-                    le noyau d'uranium, bombardé par un neutron, se déforme, se rompt et libère une immense quantité
-                    d'énergie.
+                    le <strong>noyau d'uranium</strong>, <strong>bombardé par un <a href="/fr/glossaire.html#neutron"
+                            class="article__glossary-link">neutron</a></strong>, se <strong>déforme, se rompt</strong>
+                    et <strong>libère une immense quantité
+                        d'énergie</strong>.
                 </p>
                 <p class="article__text">
-                    Elle nomme ce phénomène fission nucléaire, par analogie avec la division cellulaire.
+                    Elle nomme ce phénomène <strong><a href="/fr/glossaire.html#fission-nucleaire"
+                            class="article__glossary-link">fission nucléaire</a></strong>, par analogie avec la
+                    <strong>division cellulaire</strong>.
                 </p>
                 <p class="article__text">
-                    C'est une découverte théorique majeure, à la fois simple et vertigineuse.
+                    C'est une <strong>découverte théorique majeure</strong>, à la fois <strong>simple et
+                        vertigineuse</strong>.
                 </p>
                 <figure class="article__figure">
                     <img src="/assets/img/article3-3.webp" alt="Noyau d'Uranium" class="article__img">
@@ -162,8 +190,7 @@
             </section>
 
             <section class="article__section">
-                <h2 class="article__heading">Vulgarisation de la théorie :<br>comment fonctionne la fission nucléaire :
-                </h2>
+                <h2 class="article__heading">Vulgarisation de la théorie<br>comment fonctionne la fission nucléaire</h2>
                 <p class="article__text">
                     Pour comprendre cette idée, imaginons le noyau d'un atome comme une goutte de liquide composée de
                     protons et de neutrons liés par une force très puissante.
@@ -171,43 +198,60 @@
 
                 <div class="article__list">
                     <div class="article__list-item">
-                        <h3 class="article__list-title">1. L'impact d'un neutron</h3>
+                        <h3 class="article__list-title">1. <strong>L'impact d'un <a href="/fr/glossaire.html#neutron"
+                                    class="article__glossary-link">neutron</a></strong></h3>
                         <p class="article__text">
-                            Lorsqu'un neutron percute le noyau, il le rend instable comme une goutte qui se met à vibrer
+                            Lorsqu'un <strong><a href="/fr/glossaire.html#neutron"
+                                    class="article__glossary-link">neutron</a></strong> <strong>percute</strong> le
+                            <strong>noyau</strong>, il le <strong>rend instable</strong> comme une goutte qui se met à
+                            vibrer
                             sous un choc.
                         </p>
                     </div>
 
                     <div class="article__list-item">
-                        <h3 class="article__list-title">2. La division du noyau</h3>
+                        <h3 class="article__list-title">2. <strong>La division du noyau</strong></h3>
                         <p class="article__text">
-                            Sous la tension, le noyau se scinde en deux fragments plus petits (par exemple du baryum et
-                            du krypton), libérant au passage quelques neutrons.
+                            Sous la tension, le <strong>noyau se scinde en deux fragments</strong> plus petits (par
+                            exemple du <strong>baryum</strong> et
+                            du <strong>krypton</strong>), <strong>libérant au passage quelques <a
+                                    href="/fr/glossaire.html#neutron"
+                                    class="article__glossary-link">neutrons</a></strong>.
                         </p>
                     </div>
 
                     <div class="article__list-item">
-                        <h3 class="article__list-title">3. La libération d'énergie</h3>
+                        <h3 class="article__list-title">3. <strong>La libération d'énergie</strong></h3>
                         <p class="article__text">
-                            Une partie de la masse initiale disparaît. Selon l'équation d'Einstein (E = mc²), cette
-                            masse est convertie en énergie.
+                            Une partie de la <strong>masse initiale disparaît</strong>. Selon l'<strong>équation
+                                d'Einstein (E = mc²)</strong>, cette
+                            masse est <strong>convertie en énergie</strong>.
                         </p>
                         <p class="article__text">
-                            Résultat: une quantité d'énergie gigantesque est libérée - la fission d'un gramme d'uranium
-                            équivaut à la combustion d'une tonne de charbon.
+                            Résultat: une <strong>quantité d'énergie gigantesque</strong> est libérée - la <strong><a
+                                    href="/fr/glossaire.html#fission-nucleaire"
+                                    class="article__glossary-link">fission</a> d'un gramme d'uranium
+                                équivaut à la combustion d'une tonne de charbon</strong>.
                         </p>
                     </div>
 
                     <div class="article__list-item">
-                        <h3 class="article__list-title">4. La réaction en chaîne</h3>
+                        <h3 class="article__list-title">4. <strong>La <a href="/fr/glossaire.html#reaction-chaine"
+                                    class="article__glossary-link">réaction en chaîne</a></strong></h3>
                         <p class="article__text">
-                            Les neutrons libérés peuvent frapper d'autres noyaux, provoquant de nouvelles fissions.
+                            Les <strong><a href="/fr/glossaire.html#neutron" class="article__glossary-link">neutrons</a>
+                                libérés</strong> peuvent <strong>frapper d'autres noyaux</strong>, <strong>provoquant de
+                                nouvelles <a href="/fr/glossaire.html#fission-nucleaire"
+                                    class="article__glossary-link">fissions</a></strong>.
                         </p>
                         <p class="article__text">
-                            Si cette réaction se propage sans contrôle, elle devient explosive (bombe atomique).
+                            Si cette <strong><a href="/fr/glossaire.html#reaction-chaine"
+                                    class="article__glossary-link">réaction</a> se propage sans contrôle</strong>, elle
+                            devient <strong>explosive (bombe atomique)</strong>.
                         </p>
                         <p class="article__text">
-                            Si elle est régulée, elle fournit une source d'énergie continue (centrales nucléaires).
+                            Si elle est <strong>régulée</strong>, elle fournit une <strong>source d'énergie continue
+                                (centrales nucléaires)</strong>.
                         </p>
                     </div>
                 </div>
@@ -219,119 +263,107 @@
             </section>
 
             <section class="article__section">
-                <h2 class="article__heading">Une avancée scientifique majeure :</h2>
+                <h2 class="article__heading">Une avancée scientifique majeure</h2>
                 <p class="article__text">
-                    Lise Meitner ne s'est pas contentée d'observer le phénomène :
+                    <strong>Lise Meitner</strong> ne s'est pas <strong>contentée d'observer</strong> le phénomène :
                 </p>
                 <p class="article__text">
-                    elle l'a expliqué et quantifié grâce à la physique théorique.
+                    elle l'a <strong>expliqué et quantifié</strong> grâce à la <strong>physique théorique</strong>.
                 </p>
                 <p class="article__text">
-                    En reliant les résultats expérimentaux de Hahn aux lois d'Einstein, elle montre que la perte de
-                    masse du noyau correspond exactement à l'énergie dégagée.
+                    En <strong>reliant</strong> les <strong>résultats expérimentaux de Hahn</strong> aux <strong>lois
+                        d'Einstein</strong>, elle <strong>montre</strong> que la <strong>perte de
+                        masse du noyau</strong> correspond <strong>exactement à l'énergie dégagée</strong>.
                 </p>
                 <p class="article__text">
-                    Cette démonstration, publiée avec Otto Frisch en 1939 dans la revue Nature, marque la naissance
-                    officielle de la physique nucléaire moderne.
+                    Cette <strong>démonstration</strong>, <strong>publiée avec Otto Frisch</strong> en
+                    <strong>1939</strong> dans la revue <strong>Nature</strong>, marque la <strong>naissance
+                        officielle de la physique nucléaire moderne</strong>.
                 </p>
                 <p class="article__text">
-                    C'est la première fois que l'on comprend que la matière contient une énergie potentielle immense,
-                    capable de transformer le monde.
+                    C'est la <strong>première fois</strong> que l'on comprend que la <strong>matière contient une
+                        énergie potentielle immense</strong>,
+                    <strong>capable de transformer le monde</strong>.
                 </p>
             </section>
         </article>
 
         <!-- Related Articles -->
         <section class="related">
-            <article class="related-card related-card--left">
-                <div class="related-card__content">
-                    <h3 class="related-card__title">Qui est Lise Metneir ?</h3>
-                    <p class="related-card__excerpt">"... Dans l'histoire des sciences, certaines figures ont brillé
+            <article class="card">
+                <img src="/assets/img/article1-1.webp" alt="Lise Meitner" class="card__img">
+                <div class="card__content">
+                    <h3 class="card__title">Qui est Lise Meitner ?</h3>
+                    <p class="card__excerpt">"... Dans l'histoire des sciences, certaines figures ont brillé
                         dans l'ombre. Lise Meitner est l'une d'elles. [...]"</p>
-                    <p class="related-card__description">L'histoire de Lise Meitner est celle d'une femme qui a ouvert
+                    <p class="card__description">L'histoire de Lise Meitner est celle d'une femme qui a ouvert
                         la voie à une nouvelle ère scientifique tout en affrontant les préjugés et la persécution.</p>
-                    <a href="/fr/article1.html" class="related-card__link">EN SAVOIR PLUS →</a>
+                    <a href="/fr/article1.html" class="card__link">EN SAVOIR PLUS →</a>
                 </div>
-                <img src="/assets/img/article1-1.webp" alt="Lise Meitner" class="related-card__img">
             </article>
 
-            <article class="related-card related-card--right">
-                <img src="/assets/img/card-a3.webp" alt="Les Ambitieuses" class="related-card__img">
-                <div class="related-card__content">
-                    <h3 class="related-card__title">Les Ambitieuses</h3>
-                    <p class="related-card__excerpt">"...de nombreuses femmes ont dû se battre pour exister dans des
+            <article class="card">
+                <img src="/assets/img/card-a3.webp" alt="Les Ambitieuses" class="card__img">
+                <div class="card__content">
+                    <h3 class="card__title">Les Ambitieuses</h3>
+                    <p class="card__excerpt">"...de nombreuses femmes ont dû se battre pour exister dans des
                         sociétés qui ne leur laissaient que peu de place... [...]"</p>
-                    <p class="related-card__description">Les Ambitieuses est bien plus qu'un recueil de biographies:
+                    <p class="card__description">Les Ambitieuses est bien plus qu'un recueil de biographies:
                         c'est un manifeste pour la reconnaissance du courage féminin.</p>
-                    <a href="/fr/article2.html" class="related-card__link">EN SAVOIR PLUS →</a>
+                    <a href="/fr/article2.html" class="card__link">EN SAVOIR PLUS →</a>
                 </div>
             </article>
 
-            <article class="related-card related-card--left">
-                <div class="related-card__content">
-                    <h3 class="related-card__title">Robert Arnaut<br>La course à la bombe<br><span
-                            class="related-card__subtitle">Et si Hitler avait eu l'arme atomique ?<br>La Course à la
+            <article class="card">
+                <img src="/assets/img/card-a4.webp" alt="La Course à la bombe" class="card__img">
+                <div class="card__content">
+                    <h3 class="card__title">Robert Arnaut<br>La course à la bombe<br><span class="card__subtitle">Et si
+                            Hitler avait eu l'arme atomique ?<br>La Course à la
                             bombe</span></h3>
-                    <p class="related-card__excerpt">"... À la croisée de la science, de la politique et du drame
+                    <p class="card__excerpt">"... À la croisée de la science, de la politique et du drame
                         humain, la série documentaire... [...]"</p>
-                    <p class="related-card__description">La Course à la bombe est bien plus qu'une série sur la création
+                    <p class="card__description">La Course à la bombe est bien plus qu'une série sur la création
                         d'une arme: c'est une réflexion sur la condition humaine.</p>
-                    <a href="/fr/article4.html" class="related-card__link">EN SAVOIR PLUS →</a>
+                    <a href="/fr/article4.html" class="card__link">EN SAVOIR PLUS →</a>
                 </div>
-                <img src="/assets/img/card-a4.webp" alt="La Course à la bombe" class="related-card__img">
             </article>
 
-            <article class="related-card related-card--right">
-                <img src="/assets/img/article5-1.webp" alt="Les Femmes dans la Littérature" class="related-card__img">
-                <div class="related-card__content">
-                    <h3 class="related-card__title">Les Femmes dans la...</h3>
-                    <p class="related-card__excerpt">"... For a long time, literature has spoken about women without
+            <article class="card">
+                <img src="/assets/img/article5-1.webp" alt="Les Femmes dans la Littérature" class="card__img">
+                <div class="card__content">
+                    <h3 class="card__title">Les Femmes dans la...</h3>
+                    <p class="card__excerpt">"... For a long time, literature has spoken about women without
                         giving them a voice.... [...]"</p>
-                    <p class="related-card__description">From Christine de Pizan to Virginia Woolf, from George Sand to
+                    <p class="card__description">From Christine de Pizan to Virginia Woolf, from George Sand to
                         Toni Morrison, these women dared to write in a world that wanted them silent</p>
-                    <a href="/fr/article5.html" class="related-card__link">EN SAVOIR PLUS →</a>
+                    <a href="/fr/article5.html" class="card__link">EN SAVOIR PLUS →</a>
                 </div>
             </article>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
-        <div class="footer__top">
-            <div class="footer__brand">
-                <img src="/assets/svg/logo_radiance.svg" alt="Logo Radiance" class="footer__logo">
-                <h2 class="footer__title">Radiance</h2>
-            </div>
-            <nav class="footer__nav">
-                <a href="#" class="footer__link">MENU</a>
-                <a href="#" class="footer__link">ARTICLES</a>
-                <a href="/fr/contact.html" class="footer__link">CONTACT</a>
-                <a href="/fr/apropos.html" class="footer__link">A PROPOS</a>
-                <a href="/fr/autresprojets.html" class="footer__link">AUTRES PROJETS</a>
-            </nav>
+        <div class="footer__section">
+            <h3 class="footer__title">Contact</h3>
+            <p class="footer__text">4 pl Tharradin</p>
+            <p class="footer__text">25200 Montbeliard</p>
+            <p class="footer__text">03 81 99 47 34</p>
         </div>
 
-        <div class="footer__contact">
-            <h3 class="footer__heading">CONTACT</h3>
-            <address class="footer__address">
-                <p>4 PL THARRADIN</p>
-                <p>25200 MONTBÉLIARD</p>
-                <p>03 81 99 47 34</p>
-                <p>SITE DE L'IUT MARIE ET LOUIS PASTEUR</p>
-            </address>
+        <div class="footer__section">
+            <h3 class="footer__title">Navigation</h3>
+            <a href="#" class="footer__link">Articles</a>
+            <a href="#" class="footer__link">Contact</a>
+            <a href="#" class="footer__link">A propos</a>
+            <a href="#" class="footer__link">Autres projets</a>
         </div>
 
-        <div class="footer__social">
-            <h3 class="footer__heading">NOS RÉSEAUX SOCIAUX</h3>
-            <div class="footer__social-links">
-                <a href="#" aria-label="Facebook"><img src="/assets/svg/facebook_blanc.svg" alt="Facebook"></a>
-                <a href="#" aria-label="Instagram"><img src="/assets/svg/instagram_blanc.svg" alt="Instagram"></a>
-                <a href="#" aria-label="TikTok"><img src="/assets/svg/tiktok_blanc.svg" alt="TikTok"></a>
-            </div>
+        <div class="footer__section">
+            <h3 class="footer__title">Radiance</h3>
+            <p class="footer__text">
+                Projet realise en 2025 dans le cadre d'un exercice pedagogique au departement MMI de Montbeliard.
+            </p>
         </div>
-
-        <p class="footer__credits">Projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département MMi de
-            Montbéliard</p>
     </footer>
 
     <script src="/src/js/menu.js"></script>

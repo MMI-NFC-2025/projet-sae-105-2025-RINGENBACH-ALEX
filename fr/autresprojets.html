@@ -11,45 +11,58 @@
 <body>
     <header class="header">
         <div class="header__container">
-            <a href="../index.html" class="header__logo">
-                <img src="../assets/img/logo.svg" alt="Logo Radiance" class="header__logo-img">
-            </a>
-            <button class="header__menu-btn" id="menuBtn" aria-label="Ouvrir le menu">
-                <span class="header__menu-icon"></span>
-            </button>
-            <div class="header__lang">
-                <a href="../en/other-projects.html" class="header__lang-link">FR</a>
+            <div class="header__brand">
+                <a href="../index.html">
+                    <img src="../assets/svg/logo_radiance.svg" alt="Radiance" class="header__logo">
+                </a>
+                <span class="header__title">Radiance</span>
+            </div>
+
+            <div class="header__actions">
+                <select class="header__lang" aria-label="Changer de langue">
+                    <option value="fr">FR</option>
+                    <option value="en">EN</option>
+                </select>
+
+                <button class="header__menu-btn" aria-label="Ouvrir le menu">
+                    <span class="header__menu-icon"></span>
+                </button>
             </div>
         </div>
     </header>
 
-    <nav class="mobile-menu" id="mobileMenu">
-        <button class="mobile-menu__close" id="closeMenuBtn" aria-label="Fermer le menu">×</button>
-        <ul class="mobile-menu__list">
-            <li class="mobile-menu__item"><a href="article1.html" class="mobile-menu__link">Qui est Lise Meitner ?</a>
-            </li>
-            <li class="mobile-menu__item"><a href="article2.html" class="mobile-menu__link">Les Ambitieuses</a></li>
-            <li class="mobile-menu__item"><a href="article3.html" class="mobile-menu__link">Vulgarisation de la
-                    théorie</a></li>
-            <li class="mobile-menu__item"><a href="article4.html" class="mobile-menu__link">La Course à la Bombe</a>
-            </li>
-            <li class="mobile-menu__item"><a href="article5.html" class="mobile-menu__link">Les Femmes dans la
-                    Littérature</a></li>
-            <li class="mobile-menu__item"><a href="frise.html" class="mobile-menu__link">Frise Chronologique</a></li>
-            <li class="mobile-menu__item"><a href="contact.html" class="mobile-menu__link">Contact</a></li>
-            <li class="mobile-menu__item"><a href="glossaire.html" class="mobile-menu__link">Glossaire</a></li>
-            <li class="mobile-menu__item"><a href="a-propos.html" class="mobile-menu__link">À Propos</a></li>
-            <li class="mobile-menu__item"><a href="autresprojets.html" class="mobile-menu__link">Autres Projets</a></li>
-        </ul>
-        <div class="mobile-menu__lang">
-            <a href="../en/other-projects.html" class="mobile-menu__lang-link">EN</a>
+    <nav class="menu">
+        <div class="menu__header">
+            <span class="menu__title">Menu</span>
+            <button class="menu__close" aria-label="Fermer le menu">✕</button>
         </div>
+
+        <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link" href="/fr/article1.html">Qui est lise meitner</a></li>
+            <li class="menu__item"><a class="menu__link" href="/fr/article2.html">Les Ambitieuses</a></li>
+            <li class="menu__item"><a class="menu__link" href="/fr/article3.html">Vulgarisation de la théorie de lise
+                    meinter</a></li>
+            <li class="menu__item"><a class="menu__link" href="/fr/article4.html">La course à la bombe </a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Les femmes dans la littérature</a></li>
+            <li class="menu__item"><a class="menu__link" href="/fr/frise.html">Frise chronologique </a></li>
+            <li class="menu__item"><a class="menu__link" href="/fr/contact.html">Contact</a></li>
+            <li class="menu__item"><a class="menu__link" href="/fr/apropos.html">A propos</a></li>
+            <li class="menu__item"><a class="menu__link" href="/fr/autresprojets.html">Autres projets</a></li>
+        </ul>
     </nav>
+
+    <section class="hero">
+        <img src="../assets/img/hero_projet.webp" alt="" class="hero__image">
+
+        <div class="hero__content">
+            <h1 class="hero__title">Autres Projets</h1>
+        </div>
+    </section>
 
     <main class="main">
         <nav class="breadcrumb">
-            <a href="../index.html" class="breadcrumb__link">Accueil</a>
-            <span class="breadcrumb__separator">&gt;</span>
+            <a href="/" class="breadcrumb__link">Accueil</a>
+            <span class="breadcrumb__separator">›</span>
             <span class="breadcrumb__current">Autres Projets</span>
         </nav>
 
@@ -90,11 +103,11 @@
         </article>
     </main>
 
-    <aside class="sidebar">
-        <div class="sidebar__section">
-            <h3 class="sidebar__title">MENU</h3>
-            <nav class="sidebar__nav">
-                <p class="sidebar__brand">Radiance</p>
+    <aside class="footer">
+        <div class="footer__section">
+            <h3 class="footer__title">MENU</h3>
+            <nav class="footer__nav">
+                <p class="footer__brand">Radiance</p>
                 <ul class="sidebar__list">
                     <li class="sidebar__item"><a href="../index.html" class="sidebar__link">ARTICLES</a></li>
                     <li class="sidebar__item"><a href="contact.html" class="sidebar__link">CONTACT</a></li>
@@ -106,25 +119,27 @@
     </aside>
 
     <footer class="footer">
-        <div class="footer__contact">
-            <h3 class="footer__title">CONTACT</h3>
-            <p class="footer__text">4 PL THARRADIN</p>
-            <p class="footer__text">25200 MONTBÉLIARD</p>
+        <div class="footer__section">
+            <h3 class="footer__title">Contact</h3>
+            <p class="footer__text">4 pl Tharradin</p>
+            <p class="footer__text">25200 Montbeliard</p>
             <p class="footer__text">03 81 99 47 34</p>
-            <a href="#" class="footer__link">SITE DE L'IUT MARIE ET LOUIS PASTEUR</a>
         </div>
-        <div class="footer__social">
-            <h3 class="footer__title">NOS RÉSEAUX SOCIAUX</h3>
-            <div class="footer__icons">
-                <a href="#" class="footer__icon" aria-label="Facebook">f</a>
-                <a href="#" class="footer__icon" aria-label="Instagram">
-                    <img src="../assets/img/instagram.svg" alt="Instagram">
-                </a>
-            </div>
+
+        <div class="footer__section">
+            <h3 class="footer__title">Navigation</h3>
+            <a href="#" class="footer__link">Articles</a>
+            <a href="#" class="footer__link">Contact</a>
+            <a href="#" class="footer__link">A propos</a>
+            <a href="#" class="footer__link">Autres projets</a>
         </div>
-        <p class="footer__credits">
-            Projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département MMi de Montbéliard
-        </p>
+
+        <div class="footer__section">
+            <h3 class="footer__title">Radiance</h3>
+            <p class="footer__text">
+                Projet realise en 2025 dans le cadre d'un exercice pedagogique au departement MMI de Montbeliard.
+            </p>
+        </div>
     </footer>
 
     <script src="../src/js/menu.js"></script>

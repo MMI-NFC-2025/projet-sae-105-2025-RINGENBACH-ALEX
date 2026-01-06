@@ -1,0 +1,36 @@
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.75rem 1.25rem;
+    margin: 1rem 0 2rem;
+    background-color: var(--blanc);
+    border-top: 1px solid var(--noir);
+    border-bottom: 1px solid var(--noir);
+    font-family: "Space Mono", monospace;
+    font-size: 0.9rem;
+}
+
+.breadcrumb__link::before {
+    content: "⌂";
+    display: inline-block;
+    margin-right: 0.4rem;
+    font-size: 1rem;
+    color: var(--noir);
+}
+
+.breadcrumb__link {
+    color: var(--violet);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.breadcrumb__separator {
+    color: var(--noir);
+}
+
+.breadcrumb__current {
+    color: var(--noir);
+    font-weight: 100%;
+}

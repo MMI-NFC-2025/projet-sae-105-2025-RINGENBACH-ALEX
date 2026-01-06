@@ -1,0 +1,86 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background-color: var(--jaune);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.header__brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.header__logo {
+    width: 32px;
+    height: 32px;
+}
+
+.header__title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--noir);
+}
+
+.header__actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.header__lang {
+    background-color: var(--blanc);
+    color: var(--noir);
+
+    border: none;
+    border-radius: 20px;
+
+    padding: 0.3rem 0.8rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.header__menu-btn {
+    width: 36px;
+    height: 36px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__menu-icon {
+    width: 18px;
+    height: 2px;
+    background-color: var(--noir);
+    position: relative;
+}
+
+.header__menu-icon::before,
+.header__menu-icon::after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    background-color: var(--noir);
+    left: 0;
+}
+
+.header__menu-icon::before {
+    top: -6px;
+}
+
+.header__menu-icon::after {
+    top: 6px;
+}

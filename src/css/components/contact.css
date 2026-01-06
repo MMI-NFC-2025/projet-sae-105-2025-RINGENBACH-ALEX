@@ -1,0 +1,81 @@
+.contact {
+    max-width: 420px;
+    margin: 3rem auto;
+    padding: 2rem 1.5rem;
+
+    background-color: #2f2f2f;
+    border-radius: 24px;
+}
+
+.contact__title {
+    font-family: "Space Mono", monospace;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: var(--jaune);
+}
+
+.form--contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form__label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--blanc);
+}
+
+.form__input,
+.form__textarea {
+    width: 100%;
+    padding: 0.75rem 0.9rem;
+
+    font-family: "Mulish", sans-serif;
+    font-size: 0.9rem;
+
+    border: none;
+    border-radius: 6px;
+    background-color: var(--blanc);
+    color: var(--noir);
+}
+
+.form__textarea {
+    resize: none;
+}
+
+.form__input::placeholder,
+.form__textarea::placeholder {
+    color: #888;
+}
+
+.form__submit {
+    margin-top: 1.5rem;
+    padding: 0.9rem;
+
+    font-family: "Space Mono", monospace;
+    font-size: 1rem;
+    font-weight: 700;
+
+    color: var(--noir);
+    background-color: var(--jaune);
+
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.form__submit:hover {
+    background-color: var(--violet);
+    color: var(--blanc-ivoire);
+    transform: translateY(-2px);
+}

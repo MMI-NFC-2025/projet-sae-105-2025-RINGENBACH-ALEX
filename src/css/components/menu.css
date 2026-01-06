@@ -1,0 +1,47 @@
+.menu {
+    position: fixed;
+    inset: 0;
+    background-color: var(--jaune);
+    padding: 1.5rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+.menu--open {
+    transform: translateX(0);
+}
+
+.menu__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.menu__title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--noir);
+}
+
+.menu__close {
+    background-color: transparent;
+    color: var(--noir);
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.menu__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu__link {
+    display: block;
+    padding: 1rem 0;
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--noir);
+}

@@ -1,0 +1,48 @@
+.carousel {
+    margin: 3rem 0;
+}
+
+.carousel__title {
+    font-family: "Space Mono", monospace;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: var(--noir);
+}
+
+.carousel__container {
+    display: flex;
+    gap: 1.25rem;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+
+    padding-bottom: 1rem;
+}
+
+.carousel__container::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel__container {
+    scrollbar-width: none;
+}
+
+.carousel__item {
+    flex: 0 0 70%;
+    max-width: 260px;
+
+    border-radius: 8px;
+    overflow: hidden;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.25s ease;
+}
+
+.carousel__item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
