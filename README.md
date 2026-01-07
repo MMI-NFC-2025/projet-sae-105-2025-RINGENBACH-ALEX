@@ -3,8 +3,8 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
-- URL du site :
-- URL FIGMA :
+- NOM : Ringenbach
+- PRÉNOM : Alex
+- GROUPE : B2
+- URL du site :  https://phenomenal-pie-f99bc4.netlify.app/fr/ , http://radiance-projet-s1.alex-ringenbach.fr/ (infomaniak doit validé la mise en ligne utilisé le lien netlify si celui d'infomaniak ne fonctionne pas )
+- URL FIGMA : https://www.figma.com/design/l9bMjvLjAYUKbuQMAhibfi/Maquettes-projet-individuel-%E2%80%94-Alex-Ringenbach?node-id=3701-119&p=f&t=bTElca7eco3lrOUC-0
