@@ -11,23 +11,28 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&family=Space+Mono:wght@400;700&display=swap"
         rel="stylesheet">
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
 </head>
 
 <body>
     <header class="header">
         <div class="header__container">
             <div class="header__brand">
-                <a href="../index.html">
+                <a href="index.html">
                     <img src="/assets/svg/logo_radiance.svg" alt="Radiance" class="header__logo">
                 </a>
                 <span class="header__title">Radiance</span>
             </div>
 
             <div class="header__actions">
-                <select class="header__lang" aria-label="Changer de langue">
-                    <option value="fr">FR</option>
-                    <option value="en">EN</option>
-                </select>
+                <section class="header__lang" aria-label="Changer de langue">
+                    <a href="/fr/article2.html">FR</a>
+                    <a href="/en/article-en2.html">EN</a>
+                </section>
 
                 <button class="header__menu-btn" aria-label="Ouvrir le menu">
                     <span class="header__menu-icon"></span>
@@ -48,7 +53,8 @@
             <li class="menu__item"><a class="menu__link" href="/fr/article3.html">Vulgarisation de la théorie de lise
                     meinter</a></li>
             <li class="menu__item"><a class="menu__link" href="/fr/article4.html">La course à la bombe </a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Les femmes dans la littérature</a></li>
+            <li class="menu__item"><a class="menu__link" href="/fr/article5.html">Les femmes dans la littérature</a>
+            </li>
             <li class="menu__item"><a class="menu__link" href="/fr/frise.html">Frise chronologique </a></li>
             <li class="menu__item"><a class="menu__link" href="/fr/contact.html">Contact</a></li>
             <li class="menu__item"><a class="menu__link" href="/fr/apropos.html">A propos</a></li>
@@ -64,16 +70,15 @@
             </h1>
         </div>
     </section>
-
+    <nav class="breadcrumb">
+        <a href="/" class="breadcrumb__link">Accueil</a>
+        <span class="breadcrumb__separator">›</span>
+        <span class="breadcrumb__current">Vulgarisation de la théorie de Lise Meitner</span>
+    </nav>
     <main class="main">
 
-        <nav class="breadcrumb">
-            <a href="/" class="breadcrumb__link">Accueil</a>
-            <span class="breadcrumb__separator">›</span>
-            <span class="breadcrumb__current">Vulgarisation de la théorie de Lise Meitner</span>
-        </nav>
 
-        <!-- Article Content -->
+
         <article class="article">
             <p class="article__author">Article écrit par Alex Ringenbach</p>
 
@@ -83,14 +88,14 @@
                 <p class="article__text">
                     En <strong>décembre 1938</strong>, un événement scientifique bouleverse à jamais la compréhension de
                     la matière: la
-                    <strong><a href="/fr/glossaire.html#fission-nucleaire" class="article__glossary-link">fission
+                    <strong><a href="/fr/glossaire.html" class="article__glossary-link">fission
                             nucléaire</a></strong>.
                 </p>
                 <p class="article__text">
                     Derrière cette <strong>découverte majeure</strong> se cache <strong>Lise Meitner</strong>,
                     <strong>physicienne autrichienne</strong>
                     réfugiée en Suède,
-                    qui parvient à expliquer comment un <strong>noyau d'<a href="/fr/glossaire.html#atome"
+                    qui parvient à expliquer comment un <strong>noyau d'<a href="/fr/glossaire.html"
                             class="article__glossary-link">atome</a></strong> peut littéralement <strong>se scinder en
                         deux</strong>.
                 </p>
@@ -110,7 +115,7 @@
                         révolutionnaire</strong> ?
                 </p>
                 <figure class="article__figure">
-                    <img src="/assets/img/article3-1.webp" alt="Otto Hahn" class="article__img">
+                    <img src="/assets/img/article3-1.webp" alt="Otto Hahn" class="article__img" loading="lazy">
                     <figcaption class="article__caption">*Photo d'Otto Hahn</figcaption>
                 </figure>
             </section>
@@ -122,11 +127,11 @@
                     <strong>pleine effervescence</strong>.
                 </p>
                 <p class="article__text">
-                    Depuis la <strong>découverte du <a href="/fr/glossaire.html#neutron"
+                    Depuis la <strong>découverte du <a href="/fr/glossaire.html"
                             class="article__glossary-link">neutron</a></strong> par <strong>James Chadwick</strong>, les
                     chercheurs s'interrogent: que se passe-t-il
-                    lorsqu'on <strong>bombarde un noyau d'uranium</strong> avec des <strong><a
-                            href="/fr/glossaire.html#neutron" class="article__glossary-link">neutrons</a></strong> ?
+                    lorsqu'on <strong>bombarde un noyau d'uranium</strong> avec des <strong><a href="/fr/glossaire.html"
+                            class="article__glossary-link">neutrons</a></strong> ?
                 </p>
                 <p class="article__text">
                     <strong>Lise Meitner</strong> et le chimiste <strong>Otto Hahn</strong> cherchent à <strong>créer
@@ -147,7 +152,7 @@
                     C'est à <strong>Lise Meitner</strong> qu'il revient de <strong>résoudre cette énigme</strong>.
                 </p>
                 <figure class="article__figure">
-                    <img src="/assets/img/article3-2.webp" alt="James Chadwick" class="article__img">
+                    <img src="/assets/img/article3-2.webp" alt="James Chadwick" class="article__img" loading="lazy">
                     <figcaption class="article__caption">*Photo de James Chadwick</figcaption>
                 </figure>
             </section>
@@ -155,7 +160,7 @@
             <section class="article__section">
                 <h2 class="article__heading">La naissance d'une idée révolutionnaire</h2>
                 <p class="article__text">
-                    <strong>Exilée</strong> en Suède après l'<strong><a href="/fr/glossaire.html#anschluss"
+                    <strong>Exilée</strong> en Suède après l'<strong><a href="/fr/glossaire.html"
                             class="article__glossary-link">Anschluss</a></strong>, <strong>Lise Meitner</strong> reçoit
                     les <strong>résultats de Hahn</strong> par courrier.
                 </p>
@@ -169,14 +174,14 @@
                     elle <strong>trouve la clé</strong> :
                 </p>
                 <p class="article__text">
-                    le <strong>noyau d'uranium</strong>, <strong>bombardé par un <a href="/fr/glossaire.html#neutron"
+                    le <strong>noyau d'uranium</strong>, <strong>bombardé par un <a href="/fr/glossaire.html"
                             class="article__glossary-link">neutron</a></strong>, se <strong>déforme, se rompt</strong>
                     et <strong>libère une immense quantité
                         d'énergie</strong>.
                 </p>
                 <p class="article__text">
-                    Elle nomme ce phénomène <strong><a href="/fr/glossaire.html#fission-nucleaire"
-                            class="article__glossary-link">fission nucléaire</a></strong>, par analogie avec la
+                    Elle nomme ce phénomène <strong><a href="/fr/glossaire.html" class="article__glossary-link">fission
+                            nucléaire</a></strong>, par analogie avec la
                     <strong>division cellulaire</strong>.
                 </p>
                 <p class="article__text">
@@ -184,7 +189,7 @@
                         vertigineuse</strong>.
                 </p>
                 <figure class="article__figure">
-                    <img src="/assets/img/article3-3.webp" alt="Noyau d'Uranium" class="article__img">
+                    <img src="/assets/img/article3-3.webp" alt="Noyau d'Uranium" class="article__img" loading="lazy">
                     <figcaption class="article__caption">*Photo d'un noyau d'Uranium</figcaption>
                 </figure>
             </section>
@@ -198,10 +203,10 @@
 
                 <div class="article__list">
                     <div class="article__list-item">
-                        <h3 class="article__list-title">1. <strong>L'impact d'un <a href="/fr/glossaire.html#neutron"
+                        <h3 class="article__list-title">1. <strong>L'impact d'un <a href="/fr/glossaire.html"
                                     class="article__glossary-link">neutron</a></strong></h3>
                         <p class="article__text">
-                            Lorsqu'un <strong><a href="/fr/glossaire.html#neutron"
+                            Lorsqu'un <strong><a href="/fr/glossaire.html"
                                     class="article__glossary-link">neutron</a></strong> <strong>percute</strong> le
                             <strong>noyau</strong>, il le <strong>rend instable</strong> comme une goutte qui se met à
                             vibrer
@@ -215,8 +220,7 @@
                             Sous la tension, le <strong>noyau se scinde en deux fragments</strong> plus petits (par
                             exemple du <strong>baryum</strong> et
                             du <strong>krypton</strong>), <strong>libérant au passage quelques <a
-                                    href="/fr/glossaire.html#neutron"
-                                    class="article__glossary-link">neutrons</a></strong>.
+                                    href="/fr/glossaire.html" class="article__glossary-link">neutrons</a></strong>.
                         </p>
                     </div>
 
@@ -229,24 +233,24 @@
                         </p>
                         <p class="article__text">
                             Résultat: une <strong>quantité d'énergie gigantesque</strong> est libérée - la <strong><a
-                                    href="/fr/glossaire.html#fission-nucleaire"
-                                    class="article__glossary-link">fission</a> d'un gramme d'uranium
+                                    href="/fr/glossaire.html" class="article__glossary-link">fission</a> d'un gramme
+                                d'uranium
                                 équivaut à la combustion d'une tonne de charbon</strong>.
                         </p>
                     </div>
 
                     <div class="article__list-item">
-                        <h3 class="article__list-title">4. <strong>La <a href="/fr/glossaire.html#reaction-chaine"
+                        <h3 class="article__list-title">4. <strong>La <a href="/fr/glossaire.html"
                                     class="article__glossary-link">réaction en chaîne</a></strong></h3>
                         <p class="article__text">
-                            Les <strong><a href="/fr/glossaire.html#neutron" class="article__glossary-link">neutrons</a>
+                            Les <strong><a href="/fr/glossaire.html" class="article__glossary-link">neutrons</a>
                                 libérés</strong> peuvent <strong>frapper d'autres noyaux</strong>, <strong>provoquant de
-                                nouvelles <a href="/fr/glossaire.html#fission-nucleaire"
+                                nouvelles <a href="/fr/glossaire.html"
                                     class="article__glossary-link">fissions</a></strong>.
                         </p>
                         <p class="article__text">
-                            Si cette <strong><a href="/fr/glossaire.html#reaction-chaine"
-                                    class="article__glossary-link">réaction</a> se propage sans contrôle</strong>, elle
+                            Si cette <strong><a href="/fr/glossaire.html" class="article__glossary-link">réaction</a> se
+                                propage sans contrôle</strong>, elle
                             devient <strong>explosive (bombe atomique)</strong>.
                         </p>
                         <p class="article__text">
@@ -257,7 +261,8 @@
                 </div>
 
                 <figure class="article__figure">
-                    <img src="/assets/img/article3-4.webp" alt="Fission d'un noyau d'uranium 235" class="article__img">
+                    <img src="/assets/img/article3-4.webp" alt="Fission d'un noyau d'uranium 235" class="article__img"
+                        loading="lazy">
                     <figcaption class="article__caption">La fission d'un noyau d'uranium 235</figcaption>
                 </figure>
             </section>
@@ -288,10 +293,9 @@
             </section>
         </article>
 
-        <!-- Related Articles -->
         <section class="related">
             <article class="card">
-                <img src="/assets/img/article1-1.webp" alt="Lise Meitner" class="card__img">
+                <img src="/assets/img/article1-1.webp" alt="Lise Meitner" class="card__img" loading="lazy">
                 <div class="card__content">
                     <h3 class="card__title">Qui est Lise Meitner ?</h3>
                     <p class="card__excerpt">"... Dans l'histoire des sciences, certaines figures ont brillé
@@ -303,7 +307,7 @@
             </article>
 
             <article class="card">
-                <img src="/assets/img/card-a3.webp" alt="Les Ambitieuses" class="card__img">
+                <img src="/assets/img/card-a3.webp" alt="Les Ambitieuses" class="card__img" loading="lazy">
                 <div class="card__content">
                     <h3 class="card__title">Les Ambitieuses</h3>
                     <p class="card__excerpt">"...de nombreuses femmes ont dû se battre pour exister dans des
@@ -315,7 +319,7 @@
             </article>
 
             <article class="card">
-                <img src="/assets/img/card-a4.webp" alt="La Course à la bombe" class="card__img">
+                <img src="/assets/img/card-a4.webp" alt="La Course à la bombe" class="card__img" loading="lazy">
                 <div class="card__content">
                     <h3 class="card__title">Robert Arnaut<br>La course à la bombe<br><span class="card__subtitle">Et si
                             Hitler avait eu l'arme atomique ?<br>La Course à la
@@ -329,7 +333,8 @@
             </article>
 
             <article class="card">
-                <img src="/assets/img/article5-1.webp" alt="Les Femmes dans la Littérature" class="card__img">
+                <img src="/assets/img/article5-1.webp" alt="Les Femmes dans la Littérature" class="card__img"
+                    loading="lazy">
                 <div class="card__content">
                     <h3 class="card__title">Les Femmes dans la...</h3>
                     <p class="card__excerpt">"... For a long time, literature has spoken about women without
@@ -346,22 +351,22 @@
         <div class="footer__section">
             <h3 class="footer__title">Contact</h3>
             <p class="footer__text">4 pl Tharradin</p>
-            <p class="footer__text">25200 Montbeliard</p>
+            <p class="footer__text">25200 Montbéliard</p>
             <p class="footer__text">03 81 99 47 34</p>
         </div>
 
         <div class="footer__section">
             <h3 class="footer__title">Navigation</h3>
-            <a href="#" class="footer__link">Articles</a>
-            <a href="#" class="footer__link">Contact</a>
-            <a href="#" class="footer__link">A propos</a>
-            <a href="#" class="footer__link">Autres projets</a>
+            <a href="/fr/index.html" class="footer__link">Articles</a>
+            <a href="/fr/contact.html" class="footer__link">Contact</a>
+            <a href="/fr/apropos.html" class="footer__link">À propos</a>
+            <a href="/fr/autres-projets.html" class="footer__link">Autres projets</a>
         </div>
 
         <div class="footer__section">
             <h3 class="footer__title">Radiance</h3>
             <p class="footer__text">
-                Projet realise en 2025 dans le cadre d'un exercice pedagogique au departement MMI de Montbeliard.
+                Projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département MMi de Montbéliard.
             </p>
         </div>
     </footer>

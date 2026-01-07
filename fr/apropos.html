@@ -11,25 +11,28 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&family=Space+Mono:wght@400;700&display=swap"
         rel="stylesheet">
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
 </head>
 
 <body>
-
-    <!-- HEADER -->
     <header class="header">
         <div class="header__container">
             <div class="header__brand">
-                <a href="../index.html">
+                <a href="index.html">
                     <img src="/assets/svg/logo_radiance.svg" alt="Radiance" class="header__logo">
                 </a>
                 <span class="header__title">Radiance</span>
             </div>
 
             <div class="header__actions">
-                <select class="header__lang" aria-label="Changer de langue">
-                    <option value="fr">FR</option>
-                    <option value="en">EN</option>
-                </select>
+                <section class="header__lang" aria-label="Changer de langue">
+                    <a href="/fr/apropos.html">FR</a>
+                    <a href="/en/about.html">EN</a>
+                </section>
 
                 <button class="header__menu-btn" aria-label="Ouvrir le menu">
                     <span class="header__menu-icon"></span>
@@ -38,7 +41,6 @@
         </div>
     </header>
 
-    <!-- MENU -->
     <nav class="menu">
         <div class="menu__header">
             <span class="menu__title">Menu</span>
@@ -58,25 +60,21 @@
             <li class="menu__item"><a class="menu__link" href="/fr/autresprojets.html">Autres projets</a></li>
         </ul>
     </nav>
-
+    <section class="hero">
+        <img src="/assets/img/hero_apropos.webp" alt="" class="hero__image">
+        <div class="hero__content">
+            <h1 class="hero__title"><strong>À</strong> <strong>propos</strong></h1>
+        </div>
+    </section>
+    <nav class="breadcrumb">
+        <a href="/" class="breadcrumb__link">Accueil</a>
+        <span class="breadcrumb__separator">›</span>
+        <span class="breadcrumb__current">À propos</span>
+    </nav>
     <main class="main">
 
-        <!-- HERO (même structure) -->
-        <section class="hero">
-            <img src="/assets/img/hero_apropos.webp" alt="" class="hero__image">
-            <(Reprends le même format que tes autres hero) <div class="hero__content">
-                <h1 class="hero__title"><strong>À</strong> <strong>propos</strong></h1>
-                </div>
-        </section>
 
-        <!-- FIL D’ARIANE -->
-        <nav class="breadcrumb">
-            <a href="/" class="breadcrumb__link">Accueil</a>
-            <span class="breadcrumb__separator">›</span>
-            <span class="breadcrumb__current">À propos</span>
-        </nav>
 
-        <!-- CONTENU -->
         <article class="article">
             <p class="article__author">Projet réalisé par Alex Ringenbach</p>
 
@@ -127,7 +125,6 @@
 
     </main>
 
-    <!-- FOOTER (identique) -->
     <footer class="footer">
         <div class="footer__section">
             <h3 class="footer__title">Contact</h3>
@@ -138,10 +135,10 @@
 
         <div class="footer__section">
             <h3 class="footer__title">Navigation</h3>
-            <a href="#" class="footer__link">Articles</a>
-            <a href="#" class="footer__link">Contact</a>
-            <a href="#" class="footer__link">À propos</a>
-            <a href="#" class="footer__link">Autres projets</a>
+            <a href="/fr/index.html" class="footer__link">Articles</a>
+            <a href="/fr/contact.html" class="footer__link">Contact</a>
+            <a href="/fr/apropos.html" class="footer__link">À propos</a>
+            <a href="/fr/autres-projets.html" class="footer__link">Autres projets</a>
         </div>
 
         <div class="footer__section">

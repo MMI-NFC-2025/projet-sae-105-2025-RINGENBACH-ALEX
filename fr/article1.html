@@ -11,23 +11,28 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&family=Space+Mono:wght@400;700&display=swap"
         rel="stylesheet">
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
 </head>
 
 <body>
     <header class="header">
         <div class="header__container">
             <div class="header__brand">
-                <a href="../index.html">
+                <a href="index.html">
                     <img src="/assets/svg/logo_radiance.svg" alt="Radiance" class="header__logo">
                 </a>
                 <span class="header__title">Radiance</span>
             </div>
 
             <div class="header__actions">
-                <select class="header__lang" aria-label="Changer de langue">
-                    <option value="fr">FR</option>
-                    <option value="en">EN</option>
-                </select>
+                <section class="header__lang" aria-label="Changer de langue">
+                    <a href="/fr/article1.html">FR</a>
+                    <a href="/en/article-en1.html">EN</a>
+                </section>
 
                 <button class="header__menu-btn" aria-label="Ouvrir le menu">
                     <span class="header__menu-icon"></span>
@@ -48,13 +53,15 @@
             <li class="menu__item"><a class="menu__link" href="/fr/article3.html">Vulgarisation de la théorie de lise
                     meinter</a></li>
             <li class="menu__item"><a class="menu__link" href="/fr/article4.html">La course à la bombe </a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Les femmes dans la littérature</a></li>
+            <li class="menu__item"><a class="menu__link" href="/fr/article5.html">Les femmes dans la littérature</a>
+            </li>
             <li class="menu__item"><a class="menu__link" href="/fr/frise.html">Frise chronologique </a></li>
             <li class="menu__item"><a class="menu__link" href="/fr/contact.html">Contact</a></li>
             <li class="menu__item"><a class="menu__link" href="/fr/apropos.html">A propos</a></li>
             <li class="menu__item"><a class="menu__link" href="/fr/autresprojets.html">Autres projets</a></li>
         </ul>
     </nav>
+
     <section class="hero">
         <img src="/assets/img/hero_article1.webp" alt="" class="hero__image">
 
@@ -62,13 +69,13 @@
             <h1 class="hero__title"> <strong>Qui est Lise Meitner</strong> ?</h1>
         </div>
     </section>
-
+    <nav class="breadcrumb">
+        <a href="/" class="breadcrumb__link">Accueil</a>
+        <span class="breadcrumb__separator">›</span>
+        <span class="breadcrumb__current">Qui est Lise Meitner ?</span>
+    </nav>
     <main class="main">
-        <nav class="breadcrumb">
-            <a href="/" class="breadcrumb__link">Accueil</a>
-            <span class="breadcrumb__separator">›</span>
-            <span class="breadcrumb__current">Qui est Lise Meitner ?</span>
-        </nav>
+
 
         <article class="article">
             <p class="article__author">Article écrit par Alex Ringenbach</p>
@@ -83,12 +90,12 @@
                 </p>
                 <p class="article__text">
                     Physicienne autrichienne de génie, elle a joué un rôle déterminant dans la découverte de la
-                    <strong><a href="/fr/glossaire.html#fission-nucleaire" class="article__glossary-link">fission
+                    <strong><a href="/fr/glossaire.html" class="article__glossary-link">fission
                             nucléaire</a></strong>, phénomène à l'origine de la <strong>bombe atomique</strong> et des
                     <strong>centrales nucléaires</strong>. Pourtant, son nom
                     reste largement méconnu du grand public, éclipsé par celui de son collègue <strong>Otto
                         Hahn</strong>, seul
-                    récipiendaire du <strong><a href="/fr/glossaire.html#prix-nobel" class="article__glossary-link">prix
+                    récipiendaire du <strong><a href="/fr/glossaire.html" class="article__glossary-link">prix
                             Nobel</a></strong> pour cette découverte.
                 </p>
                 <p class="article__text">
@@ -96,7 +103,7 @@
                     scientifique tout en affrontant les préjugés sexistes et la persécution nazie.
                 </p>
                 <figure class="article__figure">
-                    <img src="/assets/img/article1-1.webp" alt="Lise Meitner" class="article__img">
+                    <img src="/assets/img/article1-1.webp" alt="Lise Meitner" class="article__img" loading="lazy">
                     <figcaption class="article__caption">*Photo de Lise Meitner prise le 11 février 1936</figcaption>
                 </figure>
             </section>
@@ -120,7 +127,7 @@
                     Elle poursuit ensuite sa carrière à <strong>Berlin</strong>, où elle collabore avec le chimiste
                     <strong>Otto Hahn</strong>. Pendant
                     plus de <strong>trente ans</strong>, ils travaillent ensemble sur la <strong>radioactivité</strong>
-                    et les propriétés des <strong><a href="/fr/glossaire.html#atome"
+                    et les propriétés des <strong><a href="/fr/glossaire.html"
                             class="article__glossary-link">atomes</a></strong>.
                 </p>
                 <p class="article__text">
@@ -131,7 +138,8 @@
                     plusieurs années.
                 </p>
                 <figure class="article__figure">
-                    <img src="/assets/img/article1-2.webp" alt="Otto Hahn et Lise Meitner" class="article__img">
+                    <img src="/assets/img/article1-2.webp" alt="Otto Hahn et Lise Meitner" class="article__img"
+                        loading="lazy">
                     <figcaption class="article__caption">*Photo d'Otto Hahn et Lise Meitner</figcaption>
                 </figure>
             </section>
@@ -141,13 +149,13 @@
                 <p class="article__text">
                     Dans les <strong>années 1930</strong>, Meitner et Hahn se lancent dans une quête scientifique
                     fascinante: <strong>bombarder
-                        des noyaux d'uranium</strong> avec des <strong><a href="/fr/glossaire.html#neutron"
+                        des noyaux d'uranium</strong> avec des <strong><a href="/fr/glossaire.html"
                             class="article__glossary-link">neutrons</a></strong> pour tenter de créer des éléments plus
                     lourds.
                 </p>
                 <p class="article__text">
                     Mais en <strong>1938</strong>, leur collaboration est brutalement interrompue par l'<strong><a
-                            href="/fr/glossaire.html#anschluss" class="article__glossary-link">Anschluss</a></strong>,
+                            href="/fr/glossaire.html" class="article__glossary-link">Anschluss</a></strong>,
                     l'annexion de
                     l'Autriche par l'<strong>Allemagne nazie</strong>. En tant que <strong>juive</strong>, Lise Meitner
                     est en danger. Grâce à l'aide de
@@ -164,8 +172,8 @@
                     <strong>noyau
                         d'uranium s'est scindé en deux fragments</strong> plus légers, libérant une <strong>immense
                         quantité d'énergie</strong>. Elle
-                    nomme ce phénomène la <strong><a href="/fr/glossaire.html#fission-nucleaire"
-                            class="article__glossary-link">fission nucléaire</a></strong>.
+                    nomme ce phénomène la <strong><a href="/fr/glossaire.html" class="article__glossary-link">fission
+                            nucléaire</a></strong>.
                 </p>
                 <p class="article__text">
                     En <strong>février 1939</strong>, elle publie avec son neveu <strong>Otto Frisch</strong> une
@@ -173,7 +181,7 @@
                     <strong>Nature</strong>, posant les fondements de la <strong>physique nucléaire moderne</strong>.
                 </p>
                 <figure class="article__figure">
-                    <img src="/assets/img/article1-3.webp" alt="Fission nucléaire" class="article__img">
+                    <img src="/assets/img/article1-3.webp" alt="Fission nucléaire" class="article__img" loading="lazy">
                     <figcaption class="article__caption">*Schéma de la fission nucléaire</figcaption>
                 </figure>
             </section>
@@ -181,11 +189,11 @@
             <section class="article__section">
                 <h2 class="article__heading">Une reconnaissance tardive</h2>
                 <p class="article__text">
-                    Malgré son rôle essentiel dans la découverte de la <strong><a
-                            href="/fr/glossaire.html#fission-nucleaire" class="article__glossary-link">fission
+                    Malgré son rôle essentiel dans la découverte de la <strong><a href="/fr/glossaire.html"
+                            class="article__glossary-link">fission
                             nucléaire</a></strong>, Lise Meitner est <strong>totalement
                         ignorée</strong> par le <strong>comité Nobel</strong>. En <strong>1944</strong>, le <strong><a
-                            href="/fr/glossaire.html#prix-nobel" class="article__glossary-link">prix Nobel de
+                            href="/fr/glossaire.html" class="article__glossary-link">prix Nobel de
                             chimie</a></strong> est attribué <strong>exclusivement à Otto
                         Hahn</strong>, suscitant une <strong>vive controverse</strong> parmi les scientifiques.
                 </p>
@@ -200,7 +208,7 @@
                         reconnu</strong> à sa juste valeur. Elle
                     reçoit de <strong>nombreuses distinctions honorifiques</strong>, comme le <strong>prix Enrico
                         Fermi</strong> en <strong>1966</strong>, et un <strong>élément
-                        chimique</strong> est baptisé en son honneur: le <strong><a href="/fr/glossaire.html#meitnérium"
+                        chimique</strong> est baptisé en son honneur: le <strong><a href="/fr/glossaire.html"
                             class="article__glossary-link">meitnérium</a></strong> (symbole: <strong>Mt</strong>).
                 </p>
                 <p class="article__text">
@@ -212,10 +220,9 @@
             </section>
         </article>
 
-        <!-- Articles reliés avec balises article et structure BEM -->
         <section class="related">
             <article class="card">
-                <img src="/assets/img/card-a3.webp" alt="Les Ambitieuses" class="card__img">
+                <img src="/assets/img/card-a3.webp" alt="Les Ambitieuses" class="card__img" loading="lazy">
                 <div class="card__content">
                     <h3 class="card__title">Les Ambitieuses</h3>
                     <p class="card__excerpt">"...de nombreuses femmes ont dû se battre pour exister dans des
@@ -227,7 +234,8 @@
             </article>
 
             <article class="card">
-                <img src="/assets/img/article3-1.webp" alt="Vulgarisation de la théorie" class="card__img">
+                <img src="/assets/img/article3-1.webp" alt="Vulgarisation de la théorie" class="card__img"
+                    loading="lazy">
                 <div class="card__content">
                     <h3 class="card__title">Vulgarisation de sa théorie</h3>
                     <p class="card__excerpt">"En 1938, un événement scientifique bouleverse à jamais la
@@ -239,7 +247,7 @@
             </article>
 
             <article class="card">
-                <img src="/assets/img/card-a4.webp" alt="La Course à la bombe" class="card__img">
+                <img src="/assets/img/card-a4.webp" alt="La Course à la bombe" class="card__img" loading="lazy">
                 <div class="card__content">
                     <h3 class="card__title">Robert Arnaut<br>La course à la bombe<br><span class="card__subtitle">Et si
                             Hitler avait eu l'arme atomique ?<br>La Course à la
@@ -253,7 +261,8 @@
             </article>
 
             <article class="card">
-                <img src="/assets/img/article5-1.webp" alt="Les Femmes dans la Littérature" class="card__img">
+                <img src="/assets/img/article5-1.webp" alt="Les Femmes dans la Littérature" class="card__img"
+                    loading="lazy">
                 <div class="card__content">
                     <h3 class="card__title">Les Femmes dans la...</h3>
                     <p class="card__excerpt">"... For a long time, literature has spoken about women without
@@ -270,22 +279,22 @@
         <div class="footer__section">
             <h3 class="footer__title">Contact</h3>
             <p class="footer__text">4 pl Tharradin</p>
-            <p class="footer__text">25200 Montbeliard</p>
+            <p class="footer__text">25200 Montbéliard</p>
             <p class="footer__text">03 81 99 47 34</p>
         </div>
 
         <div class="footer__section">
             <h3 class="footer__title">Navigation</h3>
-            <a href="#" class="footer__link">Articles</a>
-            <a href="#" class="footer__link">Contact</a>
-            <a href="#" class="footer__link">A propos</a>
-            <a href="#" class="footer__link">Autres projets</a>
+            <a href="/fr/index.html" class="footer__link">Articles</a>
+            <a href="/fr/contact.html" class="footer__link">Contact</a>
+            <a href="/fr/apropos.html" class="footer__link">À propos</a>
+            <a href="/fr/autres-projets.html" class="footer__link">Autres projets</a>
         </div>
 
         <div class="footer__section">
             <h3 class="footer__title">Radiance</h3>
             <p class="footer__text">
-                Projet realise en 2025 dans le cadre d'un exercice pedagogique au departement MMI de Montbeliard.
+                Projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département MMi de Montbéliard.
             </p>
         </div>
     </footer>

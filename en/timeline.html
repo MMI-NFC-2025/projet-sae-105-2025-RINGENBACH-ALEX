@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frise Chronologique - Radiance</title>
+    <title>Timeline - Radiance</title>
     <link rel="stylesheet" href="../src/css/style.css">
     <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
@@ -24,12 +24,12 @@
             </div>
 
             <div class="header__actions">
-                <section class="header__lang" aria-label="Changer de langue">
-                    <a href="/fr/frise.html">FR</a>
-                    <a href="/en/timeline.html">EN</a>
-                </section>
+                <select class="header__lang" aria-label="Change language">
+                    <a href="/en/timeline.html">EN</option>
+                        <a href="/fr/frise.html">FR</option>
+                </select>
 
-                <button class="header__menu-btn" aria-label="Ouvrir le menu">
+                <button class="header__menu-btn" aria-label="Open menu">
                     <span class="header__menu-icon"></span>
                 </button>
             </div>
@@ -39,21 +39,20 @@
     <nav class="menu">
         <div class="menu__header">
             <span class="menu__title">Menu</span>
-            <button class="menu__close" aria-label="Fermer le menu">✕</button>
+            <button class="menu__close" aria-label="Close menu">✕</button>
         </div>
 
         <ul class="menu__list">
-            <li class="menu__item"><a class="menu__link" href="/fr/article1.html">Qui est lise meitner</a></li>
-            <li class="menu__item"><a class="menu__link" href="/fr/article2.html">Les Ambitieuses</a></li>
-            <li class="menu__item"><a class="menu__link" href="/fr/article3.html">Vulgarisation de la théorie de lise
-                    meinter</a></li>
-            <li class="menu__item"><a class="menu__link" href="/fr/article4.html">La course à la bombe </a></li>
-            <li class="menu__item"><a class="menu__link" href="/fr/article5.html">Les femmes dans la littérature</a>
-            </li>
-            <li class="menu__item"><a class="menu__link" href="/fr/frise.html">Frise chronologique </a></li>
-            <li class="menu__item"><a class="menu__link" href="/fr/contact.html">Contact</a></li>
-            <li class="menu__item"><a class="menu__link" href="/fr/apropos.html">A propos</a></li>
-            <li class="menu__item"><a class="menu__link" href="/fr/autresprojets.html">Autres projets</a></li>
+            <li class="menu__item"><a class="menu__link" href="/en/article-en1.html">Who is Lise Meitner?</a></li>
+            <li class="menu__item"><a class="menu__link" href="/en/article-en2.html">Les Ambitieuses</a></li>
+            <li class="menu__item"><a class="menu__link" href="/en/article-en3.html">Popularization of Lise Meitner’s
+                    Theory</a></li>
+            <li class="menu__item"><a class="menu__link" href="/en/article-en4.html">The Race for the Bomb</a></li>
+            <li class="menu__item"><a class="menu__link" href="/en/article-en5.html">Women in Literature</a></li>
+            <li class="menu__item"><a class="menu__link" href="/en/timeline.html">Timeline</a></li>
+            <li class="menu__item"><a class="menu__link" href="/en/contact.html">Contact</a></li>
+            <li class="menu__item"><a class="menu__link" href="/en/about.html">About</a></li>
+            <li class="menu__item"><a class="menu__link" href="/en/other-projects.html">Other Projects</a></li>
         </ul>
     </nav>
 
@@ -61,28 +60,30 @@
         <img src="../assets/img/hero_frise.webp" alt="" class="hero__image">
 
         <div class="hero__content">
-            <h1 class="hero__title">Frise Chronologique</h1>
+            <h1 class="hero__title">Timeline</h1>
         </div>
     </section>
+
     <nav class="breadcrumb">
-        <a href="/" class="breadcrumb__link">Accueil</a>
+        <a href="/" class="breadcrumb__link">Home</a>
         <span class="breadcrumb__separator">›</span>
-        <span class="breadcrumb__current">Frise Chronologique</span>
+        <span class="breadcrumb__current">Timeline</span>
     </nav>
+
     <main class="main">
 
-
         <article class="timeline">
-            <h1 class="timeline__title">Frise Chronologique</h1>
+            <h1 class="timeline__title">Timeline</h1>
 
             <div class="timeline__container">
+
                 <div class="timeline__item">
                     <div class="timeline__marker"></div>
                     <div class="timeline__content">
                         <h2 class="timeline__year">Matilda Joslyn Gage (1826 – 1898)</h2>
                         <p class="timeline__text">
-                            C'est d'elle que vient le nom "Effet Matilda". Elle fut l'une des premières à dénoncer
-                            l'effacement des femmes dans l'histoire, notamment dans la science.
+                            The name “Matilda Effect” comes from her. She was one of the first to denounce
+                            the erasure of women in history, particularly in science.
                         </p>
                     </div>
                 </div>
@@ -92,8 +93,8 @@
                     <div class="timeline__content">
                         <h2 class="timeline__year">Marie Curie (1867 – 1934)</h2>
                         <p class="timeline__text">
-                            Découvertes : Travaux sur la radioactivité, double prix Nobel (Physique en 1903, Chimie en
-                            1911).
+                            Discoveries: Research on radioactivity, double Nobel Prize
+                            (Physics in 1903, Chemistry in 1911).
                         </p>
                     </div>
                 </div>
@@ -103,7 +104,7 @@
                     <div class="timeline__content">
                         <h2 class="timeline__year">Lise Meitner (1878 – 1968)</h2>
                         <p class="timeline__text">
-                            A participé à la découverte de la fission nucléaire.
+                            Contributed to the discovery of nuclear fission.
                         </p>
                     </div>
                 </div>
@@ -113,8 +114,8 @@
                     <div class="timeline__content">
                         <h2 class="timeline__year">Chien-Shiung Wu (1912 – 1997)</h2>
                         <p class="timeline__text">
-                            A démontré expérimentalement la non-conservation de la parité, un principe fondamental en
-                            physique.
+                            Experimentally demonstrated the non-conservation of parity,
+                            a fundamental principle in physics.
                         </p>
                     </div>
                 </div>
@@ -124,7 +125,7 @@
                     <div class="timeline__content">
                         <h2 class="timeline__year">Marthe Gautier (1910 – 2014)</h2>
                         <p class="timeline__text">
-                            A découvert l'origine chromosomique de la trisomie 21.
+                            Discovered the chromosomal origin of trisomy 21.
                         </p>
                     </div>
                 </div>
@@ -134,7 +135,8 @@
                     <div class="timeline__content">
                         <h2 class="timeline__year">Rosalind Franklin (1920 – 1958)</h2>
                         <p class="timeline__text">
-                            A photographié la structure en double hélice de l'ADN grâce à la diffraction des rayons X.
+                            Captured the double-helix structure of DNA
+                            using X-ray diffraction.
                         </p>
                     </div>
                 </div>
@@ -142,9 +144,9 @@
                 <div class="timeline__item">
                     <div class="timeline__marker"></div>
                     <div class="timeline__content">
-                        <h2 class="timeline__year">Jocelyn Bell Burnell (née en 1943)</h2>
+                        <h2 class="timeline__year">Jocelyn Bell Burnell (born 1943)</h2>
                         <p class="timeline__text">
-                            A découvert les pulsars en 1967 lors de sa thèse.
+                            Discovered pulsars in 1967 during her PhD research.
                         </p>
                     </div>
                 </div>
@@ -152,9 +154,9 @@
                 <div class="timeline__item">
                     <div class="timeline__marker"></div>
                     <div class="timeline__content">
-                        <h2 class="timeline__year">Donna Strickland (née en 1959)</h2>
+                        <h2 class="timeline__year">Donna Strickland (born 1959)</h2>
                         <p class="timeline__text">
-                            Travaux sur les impulsions laser ultracourtes (technique CPA).
+                            Research on ultra-short laser pulses (CPA technique).
                         </p>
                     </div>
                 </div>
@@ -162,9 +164,10 @@
                 <div class="timeline__item">
                     <div class="timeline__marker"></div>
                     <div class="timeline__content">
-                        <h2 class="timeline__year">Katie Bouman (née en 1989)</h2>
+                        <h2 class="timeline__year">Katie Bouman (born 1989)</h2>
                         <p class="timeline__text">
-                            A dirigé le développement de l'algorithme ayant permis la première image d'un trou noir.
+                            Led the development of the algorithm that produced
+                            the first image of a black hole.
                         </p>
                     </div>
                 </div>
@@ -172,17 +175,17 @@
                 <div class="timeline__item">
                     <div class="timeline__marker"></div>
                     <div class="timeline__content">
-                        <h2 class="timeline__year">Les femmes de la tech et de l'IA (XXIe siècle)</h2>
+                        <h2 class="timeline__year">Women in Tech and AI (21st century)</h2>
                         <p class="timeline__text">
-                            Toujours d'actualité : leurs contributions à l'éthique de l'IA et à la recherche
-                            technologique sont souvent minimisées ou récupérées.
+                            Still relevant today: their contributions to AI ethics
+                            and technological research are often minimized or appropriated.
                         </p>
                     </div>
                 </div>
+
             </div>
         </article>
     </main>
-
 
     <footer class="footer">
         <div class="footer__section">
@@ -194,16 +197,16 @@
 
         <div class="footer__section">
             <h3 class="footer__title">Navigation</h3>
-            <a href="/fr/index.html" class="footer__link">Articles</a>
-            <a href="/fr/contact.html" class="footer__link">Contact</a>
-            <a href="/fr/apropos.html" class="footer__link">À propos</a>
-            <a href="/fr/autres-projets.html" class="footer__link">Autres projets</a>
+            <a href="/en/index.html" class="footer__link">Articles</a>
+            <a href="/en/contact-en.html" class="footer__link">Contact</a>
+            <a href="/en/about.html" class="footer__link">About</a>
+            <a href="/en/other-projects.html" class="footer__link">Other Projects</a>
         </div>
 
         <div class="footer__section">
             <h3 class="footer__title">Radiance</h3>
             <p class="footer__text">
-                Projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département MMi de Montbéliard.
+                Project carried out in 2025 as part of an educational exercise at the MMi department of Montbéliard.
             </p>
         </div>
     </footer>

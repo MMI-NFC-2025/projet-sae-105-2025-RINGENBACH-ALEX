@@ -1,73 +1,34 @@
-/* =====================================================
-   TIMELINE – FRISE CHRONOLOGIQUE
-   ===================================================== */
-
-.timeline {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 2rem 1.25rem 3rem;
-}
-
-/* Titre principal */
-.timeline__title {
-    font-family: "Space Mono", monospace;
-    font-size: 1.6rem;
-    margin-bottom: 3rem;
-    color: var(--noir);
-}
-
-/* Conteneur de la frise */
 .timeline__container {
     position: relative;
-    padding-left: 2rem;
-}
-
-/* Ligne verticale */
-.timeline__container {
+    padding-left: 1rem;
     border-left: 3px solid var(--jaune);
 }
 
-/* =====================================================
-   ITEM
-   ===================================================== */
-
 .timeline__item {
     position: relative;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
-/* Point jaune */
-.timeline__marker {
-    position: absolute;
-    left: -1.15rem;
-    top: 1.2rem;
-
-    width: 20px;
-    height: 20px;
-    background-color: var(--jaune);
-    border-radius: 50%;
-}
-
-/* Carte */
 .timeline__content {
     background-color: #2f2f2f;
     border-radius: 16px;
-    padding: 1.25rem 1.25rem;
+    padding: 1.6rem 1.8rem;
+
+    margin-left: 1.5rem;
+    width: calc(100% - 1.5rem);
 
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
 }
 
-/* Année / nom */
 .timeline__year {
     font-family: "Space Mono", monospace;
-    font-size: 0.95rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.05rem;
+    margin-bottom: 0.7rem;
     color: var(--jaune);
 }
 
-/* Texte */
 .timeline__text {
-    font-size: 0.9rem;
-    line-height: 1.6;
+    font-size: 1rem;
+    line-height: 1.75;
     color: var(--blanc-casse);
 }

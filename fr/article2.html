@@ -11,23 +11,28 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&family=Space+Mono:wght@400;700&display=swap"
         rel="stylesheet">
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
 </head>
 
 <body>
     <header class="header">
         <div class="header__container">
             <div class="header__brand">
-                <a href="../index.html">
+                <a href="index.html">
                     <img src="/assets/svg/logo_radiance.svg" alt="Radiance" class="header__logo">
                 </a>
                 <span class="header__title">Radiance</span>
             </div>
 
             <div class="header__actions">
-                <select class="header__lang" aria-label="Changer de langue">
-                    <option value="fr">FR</option>
-                    <option value="en">EN</option>
-                </select>
+                <section class="header__lang" aria-label="Changer de langue">
+                    <a href="/fr/article2.html">FR</a>
+                    <a href="/en/article-en2.html">EN</a>
+                </section>
 
                 <button class="header__menu-btn" aria-label="Ouvrir le menu">
                     <span class="header__menu-icon"></span>
@@ -48,7 +53,8 @@
             <li class="menu__item"><a class="menu__link" href="/fr/article3.html">Vulgarisation de la théorie de lise
                     meinter</a></li>
             <li class="menu__item"><a class="menu__link" href="/fr/article4.html">La course à la bombe </a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Les femmes dans la littérature</a></li>
+            <li class="menu__item"><a class="menu__link" href="/fr/article5.html">Les femmes dans la littérature</a>
+            </li>
             <li class="menu__item"><a class="menu__link" href="/fr/frise.html">Frise chronologique </a></li>
             <li class="menu__item"><a class="menu__link" href="/fr/contact.html">Contact</a></li>
             <li class="menu__item"><a class="menu__link" href="/fr/apropos.html">A propos</a></li>
@@ -62,14 +68,14 @@
             <h1 class="hero__title"><strong>Les</strong> <strong>Ambitieuses</strong></h1>
         </div>
     </section>
-
+    <nav class="breadcrumb">
+        <a href="/" class="breadcrumb__link">Accueil</a>
+        <span class="breadcrumb__separator">›</span>
+        <span class="breadcrumb__current">Les Ambitieuses</span>
+    </nav>
     <main class="main">
 
-        <nav class="breadcrumb">
-            <a href="/" class="breadcrumb__link">Accueil</a>
-            <span class="breadcrumb__separator">›</span>
-            <span class="breadcrumb__current">Les Ambitieuses</span>
-        </nav>
+
 
         <article class="article">
             <p class="article__author">Article écrit par Alex Ringenbach</p>
@@ -101,7 +107,7 @@
                         caricaturées</strong>.
                 </p>
                 <figure class="article__figure">
-                    <img src="/assets/img/article2-1.webp" alt="Virginie Girod" class="article__img">
+                    <img src="/assets/img/article2-1.webp" alt="Virginie Girod" class="article__img" loading="lazy">
                     <figcaption class="article__caption">*Photo de l'écrivaine Virginie Girod</figcaption>
                 </figure>
             </section>
@@ -131,7 +137,7 @@
                     universelle.
                 </p>
                 <figure class="article__figure">
-                    <img src="/assets/img/article2-2.webp" alt="Frida Kahlo" class="article__img">
+                    <img src="/assets/img/article2-2.webp" alt="Frida Kahlo" class="article__img" loading="lazy">
                     <figcaption class="article__caption">*Photo de Frida Kahlo présente dans le livre</figcaption>
                 </figure>
             </section>
@@ -171,7 +177,7 @@
                         pleinement, malgré tout</strong>.
                 </p>
                 <figure class="article__figure">
-                    <img src="/assets/img/article2-3.webp" alt="Simone Veil" class="article__img">
+                    <img src="/assets/img/article2-3.webp" alt="Simone Veil" class="article__img" loading="lazy">
                     <figcaption class="article__caption">*Photo de Simone Veil présente dans le livre</figcaption>
                 </figure>
             </section>
@@ -198,7 +204,7 @@
                     aussi leurs <strong>zones d'ombre, leurs doutes, leurs contradictions</strong>.
                 </p>
                 <figure class="article__figure">
-                    <img src="/assets/img/article2-4.webp" alt="Elizabeth 1er" class="article__img">
+                    <img src="/assets/img/article2-4.webp" alt="Elizabeth 1er" class="article__img" loading="lazy">
                     <figcaption class="article__caption">*Photo d'Elizabeth 1er présente dans le livre</figcaption>
                 </figure>
             </section>
@@ -233,16 +239,15 @@
                     mais souvent une <strong>quête d'émancipation collective</strong>.
                 </p>
                 <figure class="article__figure">
-                    <img src="/assets/img/article2-5.webp" alt="Marie Curie" class="article__img">
+                    <img src="/assets/img/article2-5.webp" alt="Marie Curie" class="article__img" loading="lazy">
                     <figcaption class="article__caption">*Photo de Marie Curie présente dans le livre</figcaption>
                 </figure>
             </section>
         </article>
 
-        <!-- Related Articles -->
         <section class="related">
             <article class="card">
-                <img src="/assets/img/article1-1.webp" alt="Lise Meitner" class="card__img">
+                <img src="/assets/img/article1-1.webp" alt="Lise Meitner" class="card__img" loading="lazy">
                 <div class="card__content">
                     <h3 class="card__title">Qui est Lise Meitner ?</h3>
                     <p class="card__excerpt">"... Dans l'histoire des sciences, certaines figures ont brillé
@@ -254,7 +259,8 @@
             </article>
 
             <article class="card">
-                <img src="/assets/img/article3-1.webp" alt="Vulgarisation de la théorie" class="card__img">
+                <img src="/assets/img/article3-1.webp" alt="Vulgarisation de la théorie" class="card__img"
+                    loading="lazy">
                 <div class="card__content">
                     <h3 class="card__title">Vulgarisation de sa théorie</h3>
                     <p class="card__excerpt">"En 1938, un événement scientifique bouleverse à jamais la
@@ -266,7 +272,7 @@
             </article>
 
             <article class="card">
-                <img src="/assets/img/card-a4.webp" alt="La Course à la bombe" class="card__img">
+                <img src="/assets/img/card-a4.webp" alt="La Course à la bombe" class="card__img" loading="lazy">
                 <div class="card__content">
                     <h3 class="card__title">Robert Arnaut<br>La course à la bombe<br><span class="card__subtitle">Et si
                             Hitler avait eu l'arme atomique ?<br>La Course à la
@@ -280,7 +286,8 @@
             </article>
 
             <article class="card">
-                <img src="/assets/img/article5-1.webp" alt="Les Femmes dans la Littérature" class="card__img">
+                <img src="/assets/img/article5-1.webp" alt="Les Femmes dans la Littérature" class="card__img"
+                    loading="lazy">
                 <div class="card__content">
                     <h3 class="card__title">Les Femmes dans la...</h3>
                     <p class="card__excerpt">"... For a long time, literature has spoken about women without
@@ -297,22 +304,22 @@
         <div class="footer__section">
             <h3 class="footer__title">Contact</h3>
             <p class="footer__text">4 pl Tharradin</p>
-            <p class="footer__text">25200 Montbeliard</p>
+            <p class="footer__text">25200 Montbéliard</p>
             <p class="footer__text">03 81 99 47 34</p>
         </div>
 
         <div class="footer__section">
             <h3 class="footer__title">Navigation</h3>
-            <a href="#" class="footer__link">Articles</a>
-            <a href="#" class="footer__link">Contact</a>
-            <a href="#" class="footer__link">A propos</a>
-            <a href="#" class="footer__link">Autres projets</a>
+            <a href="/fr/index.html" class="footer__link">Articles</a>
+            <a href="/fr/contact.html" class="footer__link">Contact</a>
+            <a href="/fr/apropos.html" class="footer__link">À propos</a>
+            <a href="/fr/autres-projets.html" class="footer__link">Autres projets</a>
         </div>
 
         <div class="footer__section">
             <h3 class="footer__title">Radiance</h3>
             <p class="footer__text">
-                Projet realise en 2025 dans le cadre d'un exercice pedagogique au departement MMI de Montbeliard.
+                Projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département MMi de Montbéliard.
             </p>
         </div>
     </footer>
